@@ -1,10 +1,13 @@
 # AllMusicScrapper
 
-** Usage **
-```python allmusic.py -a <artist-name>
+**Usage**
 ```
-** Example **
-```python allmusic.py -a lady gaga
+python allmusic.py -a <artist-name>
+```
+
+**Example**
+```
+python allmusic.py -a lady gaga
 ```
 
 This will give you artist's name, brief description, bio and albums in the form of dictionary. For each album, detailed information(title, label, year, rating, rating_count and cover image's URL) will be given.
