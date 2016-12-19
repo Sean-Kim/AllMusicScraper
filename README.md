@@ -2,9 +2,9 @@
 
 This scrapper has the following dependency.
 
-bs4
-requests
-selenium
+bs4,
+requests,
+selenium,
 phantomjs
 
 To build javascript enabled scrapper, I used selenium and phantomjs.
