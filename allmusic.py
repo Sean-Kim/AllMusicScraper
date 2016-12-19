@@ -12,7 +12,9 @@ from time import sleep
 
 class SpotifyAPI(object):
 	def __init__(self):
-		self.token = 'BQBquQ8CC3oH6XjzRe4uQAt0OJFXlUSzf7vd7kYdsgwP-2GO3lpay6vMlHsk3b6_Fw655fwNCYIIqR_5H20yRtYphZJ9FsReWqeg8HVbOQxZVPrWF7XZeVCDreNiJn4CJBIBtKYq-gT_oaulNwqTuxtAj9GKN_1a3y0yBDSa7PaShny8CAtDqiMGWf9umBAoLiZxnklnfBVdz7vfvAPEX3arBVzat3YuIXoZAPRrTOegfbIn9EBxptZOnstB828tC7jnqv1grkc-TkQ9JPUdEF1aF4iN1-8lq25D0YK-OLvT0wuxVlBx'
+		f = open('spotify_token.txt')
+		self.token = f.readlines()[0]
+		f.close()
 
 	def search(self, itemType, query):
 		response = requests.get('https://api.spotify.com/v1/search', 
@@ -98,7 +100,7 @@ class AllMusicScraper(object):
 			
 			[img.extract() for img in bio.findAll('img')]
 			bio = bio.text.strip()
-			re.sub(r'[\s\t\r\n ]+',' ',bio)
+			bio = re.sub(r'[\s\t\r\n ]+',' ',bio)
 
 			info = {
 					'name' : name,
