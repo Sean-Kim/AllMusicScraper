@@ -10,7 +10,7 @@ If you want to add additional data using spotify's API, enter a valid OAuth toke
 This scrapper has the following dependency.
 
 *bs4
-`<addr>`requests
+requests
 *selenium
 *phantomjs
 
@@ -18,7 +18,9 @@ Selenium and phantomjs were necessary to build javascript-enabled scrapper.
 
 To install, run the following script in the command line.
 
-*pip install bs4
-*pip install requests[security]
-*pip install selenium==2.53
-*brew install phantomjs
+`
+pip install bs4
+pip install requests[security]
+pip install selenium==2.53
+brew install phantomjs
+`
