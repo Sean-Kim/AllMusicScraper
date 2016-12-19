@@ -10,7 +10,7 @@ If you want to add additional data using spotify's API, enter a valid OAuth toke
 This scrapper has the following dependency.
 
 *bs4
-*requests
+`<addr>`requests
 *selenium
 *phantomjs
 
