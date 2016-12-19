@@ -1,4 +1,4 @@
-# AllMusicScrapper
+# AllMusicScraper
 
 **Usage**
 ```
@@ -14,7 +14,7 @@ This will give you artist's name, brief description, bio and albums in the form 
 If you want to add additional data using spotify's API, enter a valid OAuth token in 'spotify_token.txt'. If the token is valid, you can get additional info including artist's spotify_id and album's spotify_id.
 
 
-This scrapper has the following dependency.
+This scraper has the following dependency.
 
 * bs4
 * requests
