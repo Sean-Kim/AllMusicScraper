@@ -13,6 +13,10 @@ This scrapper has the following dependency.
 requests
 *selenium
 *phantomjs
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
 
 Selenium and phantomjs were necessary to build javascript-enabled scrapper.
 
